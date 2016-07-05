@@ -31,15 +31,15 @@ function getcompare(array1,array2)   //function to compare
 {
     if(array1.Response==="True"&&array2.Response==="True")
     {    if(array1.imdbRating==="N/A")
-    {
+         {
         document.getElementById("compare").innerHTML="ratings of "+array1.Title+" is not available";
         return;
-    }
+         }
      else if(array2.imdbRating==="N/A")
-    {
+        {
         document.getElementById("compare").innerHTML="ratings of "+array2.Title+" is not available";
         return;
-    }
+        }
         if(array1.imdbRating>array2.imdbRating)
         document.getElementById("compare").innerHTML= "<strong>"+array1.Title+"</strong>("+array1.imdbRating+"<sub>/10</sub>)  has more ratings than "+"<strong>"+array2.Title+"</strong>("+array2.imdbRating+"<sub>/10</sub>)";
          else
