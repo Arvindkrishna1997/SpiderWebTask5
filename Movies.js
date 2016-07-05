@@ -1,7 +1,6 @@
 document.getElementById("form").addEventListener("submit",function(e){
    e.preventDefault();
-
-  var  url="http://www.omdbapi.com/?t="+document.getElementById("Title").value+"&y="+document.getElementById("year").value+"&plot="+document.getElementById("plot").value+"&r=json";
+    var  url="http://www.omdbapi.com/?t="+document.getElementById("Title").value+"&y="+document.getElementById("year").value+"&plot="+document.getElementById("plot").value+"&r=json";
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
        // alert("came");
